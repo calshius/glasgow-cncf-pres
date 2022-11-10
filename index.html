@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/night.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,15 +16,69 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2
-						<aside class="notes">
-						<p>Some notes</p>
-						</aside>
-						<p>Some slide text</p>
-						<aside class="notes">
-						<p>and some more notes</p>
-					</aside>
+				<section data-markdown data-background-image="./assets/k8s-background.png">
+					<textarea data-template>
+						Note:
+						Go over how kuerbernetes is a box of chocolates but you actually know what you're going to get
+					</textarea>
+				</section>
+				<section data-markdown data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
+					<textarea data-template>
+						# K3s
+						### Your own little box of chocolates
+						<img data-src="./assets/k3s-icon-color.png" style="width:250px;height:250px;">
+						Note:
+						Explain that K3s is a light weight version of k8s
+					</textarea>
+				</section>
+				<section data-markdown data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
+					<textarea data-template>
+						## What is it?
+						- A lightweight install of kubernetes
+						- Can be configured to run with a variety of CRIs and Ingress controllers
+						- Certified Kubernetes distribution built for IoT & Edge computing
+						- Comes packaged as a single binary under 60MB in size
+					</textarea>
+				</section>
+				<section data-markdown data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
+					<textarea data-template>
+						##### How does it work?
+						<img data-src="./assets/how-it-works-k3s-revised.svg">
+					</textarea>
+				</section>
+				<section data-markdown data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
+					<textarea data-template>
+						### Hang on! What about Windows?!?
+						<img data-src="./assets/windows-subsystem-linux-wsl2-logo.png" style="width:300px;height:300px;">
+						Note:
+						Talk about how it can run in WSL2
+					</textarea>
+				</section>
+				<section data-markdown data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
+					<textarea data-template>
+						### What I'll demo!
+						- NextJS wordcloud APP with MongoDB backend
+						- Image created using build packs
+						- Push my image to Dockerhub (yes feel free to use this 😊)
+						- Deploy my helm chart to K3S 🙌🙌
+						- A working application! 🔥🤯🚀
+					</textarea>
+				</section>
+				<section data-markdown data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
+					<textarea data-template>
+						### Let's give it whirl!
+						🙏🙇‍♂️
+					</textarea>
+				</section>
+				<section data-markdown data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
+					<textarea data-template>
+						### Closing summary
+						- Easy to setup
+						- Completely free
+						- Integrates with IDE
+						- Uses CNCF tooling
+						- Please feel free to use my code https://github.com/calshius/wordcloud-app 
+					</textarea>
 				</section>
 			</div>
 		</div>
